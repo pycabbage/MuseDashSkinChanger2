@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using HarmonyLib;
 
-namespace SkinChangerRewrite
+namespace SkinChanger2
 {
     public class HarmonyUser
     {
@@ -32,27 +32,27 @@ namespace SkinChangerRewrite
             harmony = new HarmonyLib.Harmony("Apotheosis.MuseDash.SkinChanger");
             harmony.Patch(typeof(PnlRoleSubControl).GetMethod("Init"),null, GetMethod(nameof(PnlRoleSubControlInitPrefix)));
 
-#if DEBUG
+            #if DEBUG
             /*MethodScanner(typeof(PnlRole).GetMethod("OnApplyClicked"));
             MethodScanner(typeof(PnlRole).GetMethod("OnFsvIndexChanged"));
             MethodScanner(typeof(PnlRole).GetMethod("SkinSwitchedCallback"));
             MethodScanner(typeof(PnlRoleSubControl));*/
             harmony.Patch(typeof(PnlRoleSubControl).GetMethod("CreateObject"), GetMethod(nameof(GetStack)));
             harmony.Patch(typeof(PnlRoleSubControl).GetMethod("Init"), GetMethod(nameof(GetStack)));
-#endif
+            #endif
 
         }
         private static void PnlRoleSubControlInitPrefix(PnlRoleSubControl __instance)
         {
-#if DEBUG
+        #if DEBUG
             // Get a list of skins from a path
             // Add them to m_Skin
             // might also need to set m_CharacterApplys
-#endif
+        #endif
 
         }
 
-#if DEBUG
+        #if DEBUG
 
         //Methods to exclude from MethodPrinter
         static string[] exclude = new string[]
@@ -83,7 +83,7 @@ namespace SkinChangerRewrite
         {
             foreach(var method in t.GetMethods())
             {
-               
+                
                 try
                 {
                     if (exclude.Contains(method.Name) || method.DeclaringType != t) continue;
@@ -151,6 +151,6 @@ namespace SkinChangerRewrite
         {
             Logger.Log(new System.Diagnostics.StackTrace().ToString());
         }
-#endif
+        #endif
     }
 }

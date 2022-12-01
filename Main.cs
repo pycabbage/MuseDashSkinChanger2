@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using PeroTools;
 using PeroTools2;
 using MelonLoader;
-using Logger = SkinChangerRewrite.Logger;
+using Logger = SkinChanger2.Logger;
 
-namespace SkinChangerRewrite
+namespace SkinChanger2
 {
     public class Main : MelonMod
     {

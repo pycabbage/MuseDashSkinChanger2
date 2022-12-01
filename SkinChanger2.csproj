@@ -7,8 +7,8 @@
     <ProjectGuid>{A49F8DC6-2E12-40CA-BEDA-EC909E66522E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SkinChangerRewrite</RootNamespace>
-    <AssemblyName>SkinChangerRewrite</AssemblyName>
+    <RootNamespace>SkinChanger2</RootNamespace>
+    <AssemblyName>SkinChanger2</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -32,47 +32,47 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>H:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\0Harmony.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>H:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>H:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="Il2Cppmscorlib, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>H:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\Il2Cppmscorlib.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\Il2Cppmscorlib.dll</HintPath>
     </Reference>
     <Reference Include="Il2CppNewtonsoft.Json">
-      <HintPath>H:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\Il2CppNewtonsoft.Json.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\Il2CppNewtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Il2CppSystem">
-      <HintPath>H:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\Il2CppSystem.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\Il2CppSystem.dll</HintPath>
     </Reference>
     <Reference Include="MelonLoader">
-      <HintPath>H:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\MelonLoader.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\MelonLoader.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Muse Dash\MelonLoader\Managed\Newtonsoft.Json.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="PeroTools2">
-      <HintPath>H:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\PeroTools2.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\PeroTools2.dll</HintPath>
     </Reference>
     <Reference Include="PeroTools2.Account">
-      <HintPath>H:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\PeroTools2.Account.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\PeroTools2.Account.dll</HintPath>
     </Reference>
     <Reference Include="PeroTools2.GeneralLocalization">
-      <HintPath>H:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\PeroTools2.GeneralLocalization.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\PeroTools2.GeneralLocalization.dll</HintPath>
     </Reference>
     <Reference Include="PeroTools2.UI">
-      <HintPath>H:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\PeroTools2.UI.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\PeroTools2.UI.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.Serialization">
-      <HintPath>H:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\Sirenix.Serialization.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\Sirenix.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="spine-unity">
-      <HintPath>H:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\spine-unity.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\spine-unity.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -84,34 +84,34 @@
     <Reference Include="System.Xml" />
     <Reference Include="UnhollowerBaseLib, Version=0.4.18.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>H:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\UnhollowerBaseLib.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\UnhollowerBaseLib.dll</HintPath>
     </Reference>
     <Reference Include="UnhollowerRuntimeLib">
-      <HintPath>H:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\UnhollowerRuntimeLib.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\UnhollowerRuntimeLib.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>H:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\UnityEngine.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>H:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Il2CppImageConversionManager">
-      <HintPath>H:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\UnityEngine.Il2CppImageConversionManager.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\UnityEngine.Il2CppImageConversionManager.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>H:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\UnityEngine.IMGUIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputLegacyModule">
-      <HintPath>H:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>H:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\UnityEngine.UI.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIModule">
-      <HintPath>H:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\UnityEngine.UIModule.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\UnityEngine.UIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestModule">
-      <HintPath>H:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Muse Dash\MelonLoader\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

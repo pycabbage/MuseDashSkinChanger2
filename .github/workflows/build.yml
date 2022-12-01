@@ -11,6 +11,7 @@ jobs:
     runs-on: windows-latest
     env:
       DepotDownloaderVersion: "2.4.7"
+      MelonLoaderVersion: "0.5.4"
       DEPOT_PATH: ${{ github.workspace }}/../depot
       GAME_PATH: ${{ github.workspace }}/..
       STEAM_USER: ${{ secrets.STEAM_USER }}
@@ -49,4 +50,14 @@ jobs:
       - name: Show dir
         run: |
           dir $Env:DEPOT_PATH
-          dir $Env:GAME_PATH
+          dir $Env:GAME_PATH\depot\$Env:STEAM_DEPOTID
+
+      - name: Download MelonLoader
+        run: |
+          Invoke-WebRequest -Url "https://github.com/LavaGang/MelonLoader/releases/v$Env:MelonLoaderVersion/download/MelonLoader.x64.zip" -OutFile $Env:GAME_PATH/melonloader.zip
+          7z e $Env:GAME_PATH/melonloader.zip -o"$Env:GAME_PATH"
+
+      - name: Restore NuGet package
+        run: nuget restore
+      - name: Build
+        run: msbuild.exe /p:platform="Any CPU" /p:configuration="Release"

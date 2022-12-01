@@ -6,11 +6,11 @@ using MelonLoader;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SkinChangerRewrite")]
+[assembly: AssemblyTitle("SkinChanger2")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SkinChangerRewrite")]
+[assembly: AssemblyProduct("SkinChanger2")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -37,7 +37,7 @@ using MelonLoader;
 [assembly: AssemblyFileVersion("1.0.0.0")]
 
 //Melonloader Requires this
-[assembly: MelonInfo(typeof(SkinChangerRewrite.Main),"SkinChanger", "1.0.0")]
+[assembly: MelonInfo(typeof(SkinChanger2.Main),"SkinChanger", "1.0.0")]
 [assembly: MelonGame("PeroPeroGames", "MuseDash")]
 [assembly: MelonColor(System.ConsoleColor.Magenta)]
 [assembly: MelonAuthorColor(System.ConsoleColor.Red)]
