@@ -48,9 +48,10 @@ jobs:
             -filelist $Env:DEPOT_PATH/regex.txt
 
       - name: Show dir
+        continue-on-error: true
         run: |
           dir $Env:DEPOT_PATH
-          dir $Env:GAME_PATH\depot\$Env:STEAM_DEPOTID
+          dir $Env:GAME_PATH
 
       - name: Download MelonLoader
         run: |
