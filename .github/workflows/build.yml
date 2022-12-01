@@ -1,0 +1,52 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - develop
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    env:
+      DepotDownloaderVersion: "2.4.7"
+      DEPOT_PATH: ${{ github.workspace }}/../depot
+      GAME_PATH: ${{ github.workspace }}/..
+      STEAM_USER: ${{ secrets.STEAM_USER }}
+      STEAM_PASS: ${{ secrets.STEAM_PASS }}
+      STEAM_LOGINID: ${{ secrets.STEAM_LOGINID }}
+      STEAM_APPID: 774171
+      STEAM_DEPOTID: 774172
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: microsoft/setup-msbuild@v1.1
+        with:
+          msbuild-architecture: x64
+      - uses: NuGet/setup-nuget@v1
+
+      - name: Download DepotDownloader
+        run: |
+          mkdir $Env:DEPOT_PATH
+          Invoke-WebRequest -Uri "https://github.com/SteamRE/DepotDownloader/releases/download/DepotDownloader_$Env:DepotDownloaderVersion/depotdownloader-$Env:DepotDownloaderVersion.zip" -OutFile $Env:DEPOT_PATH/depotdownloader.zip
+          7z e $Env:DEPOT_PATH/depotdownloader.zip -o"$Env:DEPOT_PATH"
+      - name: Download Depot
+        run: |
+          Write-Output "regex:^MuseDash_Data[\\|/]Managed[\\|/]" >> $Env:DEPOT_PATH/regex.txt
+          dotnet $Env:DEPOT_PATH/DepotDownloader.dll `
+            -username $env:STEAM_USER `
+            -password $env:STEAM_PASS `
+            -loginid $env:STEAM_LOGINID `
+            -app $Env:STEAM_APPID `
+            -depot $Env:STEAM_DEPOTID `
+            -validate `
+            -remember-password `
+            -max-downloads 32 `
+            -dir $Env:GAME_PATH `
+            -filelist $Env:DEPOT_PATH/regex.txt
+
+      - name: Show dir
+        run: |
+          dir $Env:DEPOT_PATH
+          dir $Env:GAME_PATH
